@@ -1,11 +1,14 @@
 /* SOBRE FULLSCREEN */
 .sobre {
+    position: fixed;          /* 🔥 CLAVE */
+    width: 100%;
     height: 100vh;
+    background: #0f172a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #0f172a;
+    z-index: 10;              /* 🔥 para que esté arriba */
 }
 
 /* IMAGEN SOBRE */
@@ -27,7 +30,19 @@
     color: #ccc;
 }
 
-/* ANIMACIÓN */
+/* INVITACIÓN */
+.invitacion {
+    display: none;            /* 🔥 oculta al inicio */
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* CUANDO SE MUESTRA */
+.invitacion.mostrar {
+    display: block;
+}
+
+/* ANIMACIÓN SOBRE */
 .fade-out {
     animation: fadeOut 1s forwards;
 }
