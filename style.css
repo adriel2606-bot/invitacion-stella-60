@@ -1,80 +1,40 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    text-align: center;
-}
-
-/* CONTENEDOR GENERAL */
-.container {
-    padding: 40px;
-}
-
-/* SOBRE */
+/* SOBRE FULLSCREEN */
 .sobre {
-    margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
 }
 
-/* CARTA */
-.carta {
-    background: #1e40af;
-    padding: 40px;
-    border-radius: 20px;
-    display: inline-block;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
-}
-
-/* BOTÓN */
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: gold;
-    border: none;
-    border-radius: 10px;
+/* IMAGEN SOBRE */
+.img-sobre {
+    width: 90%;
+    max-width: 500px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-button:hover {
-    transform: scale(1.1);
+.img-sobre:hover {
+    transform: scale(1.05);
 }
 
-/* INVITACIÓN */
-.invitacion {
-    animation: fade 1s ease;
-}
-
-/* OCULTO */
-.oculto {
-    display: none;
-}
-
-/* FOTO */
-.foto {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
-}
-
-/* FRASE */
-.frase {
-    font-size: 18px;
-    margin: 20px 0;
-    font-style: italic;
-}
-
-/* DATOS */
-.datos {
-    font-size: 18px;
-    line-height: 1.8;
+/* TEXTO SOBRE */
+.texto-sobre {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
 }
 
 /* ANIMACIÓN */
-@keyframes fade {
-    from { opacity: 0; transform: translateY(20px);}
-    to { opacity: 1; transform: translateY(0);}
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(1.1);
+    }
 }
