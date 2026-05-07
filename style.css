@@ -61,6 +61,7 @@ body {
     align-items: center;
 }
 
+/* TARJETA */
 .tarjeta {
     width: 100%;
     max-width: 520px;
@@ -72,6 +73,7 @@ body {
     box-shadow: 0 25px 70px rgba(0,0,0,0.55);
 }
 
+/* FOTO */
 .foto {
     width: 100%;
     max-width: 360px;
@@ -79,6 +81,15 @@ body {
     margin-bottom: 20px;
     border: 2px solid rgba(250, 204, 21, 0.6);
     box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+}
+
+/* TITULOS */
+.subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #bfdbfe;
+    font-size: 13px;
+    margin-bottom: 12px;
 }
 
 h1 {
@@ -95,6 +106,7 @@ h2 {
     letter-spacing: 2px;
 }
 
+/* FRASE */
 .frase {
     font-size: 21px;
     font-style: italic;
@@ -103,6 +115,7 @@ h2 {
     color: #f8fafc;
 }
 
+/* DATOS */
 .datos {
     margin: 25px 0;
     padding: 18px;
@@ -116,6 +129,7 @@ h2 {
     font-size: 18px;
 }
 
+/* CONFIRMACION */
 .confirmacion {
     margin-top: 25px;
 }
@@ -144,6 +158,7 @@ h2 {
     transform: scale(1.06);
 }
 
+/* ANIMACIÓN */
 .fade-out {
     animation: fadeOut 1s forwards;
 }
